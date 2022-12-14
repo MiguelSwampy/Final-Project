@@ -1,4 +1,4 @@
-"""
+## The Experiment 
 Miguel Swampy
 
 This code runs an expirement to determine reaction time. 
@@ -19,4 +19,4 @@ The color of the square, time between the square's presentation and participant 
 block, and trial number are all recorded. 
 
 A folder labeled 'data' is created where a .csv file named after the participants subject ID, age, and gender is stored. 
-"""
+
