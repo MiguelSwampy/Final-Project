@@ -28,11 +28,11 @@ trials = [[0,1,2,3,4,5], [0,1,2,3,4,5]]
 
 mon = monitors.Monitor('myMonitor', width=35.56, distance=60)
 mon.setSizePix([1920, 1080])
-win = visual.Window(monitor=mon, size=(800,800), units = 'pix')
+win = visual.Window(monitor=mon, size=(800,800), units = 'pix', fullscr = True)
 
 instText = visual.TextStim(win, text = 'A square will appear on the screen, press the spacebar the moment you see it. Press the spacebar to continue.')
 fixStim = visual.TextStim(win, text = '+')
-RTstim = visual.Rect(win, size = (150, 150), units = 'pix')
+RTstim = visual.Rect(win, size = (300, 300), units = 'pix')
 colorsLst = [['red', 'green', 'blue', 'red', 'green', 'blue'],['red', 'green', 'blue', 'red', 'green', 'blue']]
 
 
@@ -64,7 +64,7 @@ for block in range(nBlocks):
         win.flip()
         RTclock.reset() 
         
-        keys = event.waitKeys(keyList = ['space']) 
+        keys = event.waitKeys(keyList = ['space', 'escape']) 
         
         if keys:
             if 'escape' in keys:
