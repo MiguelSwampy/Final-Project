@@ -20,3 +20,5 @@ block, and trial number are all recorded.
 
 A folder labeled 'data' is created where a .csv file named after the participants subject ID, age, and gender is stored. 
 
+## The Code
+The Code for the experiment can be found [here](https://github.com/MiguelSwampy/Final-Project/blob/main/Final%20Project%20Code.py).
